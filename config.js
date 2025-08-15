@@ -24,7 +24,10 @@ module.exports = {
     AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",// Reply to status updates?
     AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*MEGALODON BOT VIEWED YOUR STATUS 🤖*",  // Status reply message
     READ_MESSAGE: process.env.READ_MESSAGE || "false",          // Mark messages as read automatically?
-
+    AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "false",
+    // React to status updates?
+    AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
+    // VIEW to status updates?
     // ===== REACTION & STICKER SETTINGS =====
     AUTO_REACT: process.env.AUTO_REACT || "false",              // Auto-react to messages?
     CUSTOM_REACT: process.env.CUSTOM_REACT || "false",          // Use custom emoji reactions?
@@ -65,13 +68,10 @@ module.exports = {
     // Allow public commands?
     ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
     // Show bot as always online?
-    AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "false",
-    // React to status updates?
-    AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
-    // VIEW to status updates?
     AUTO_BIO: process.env.AUTO_BIO || "false",
     
     WELCOME: process.env.WELCOME || "false",
-    
-    AMDIN_EVENTS: process.env.ADMIN_EVENTS || "true",
+
+    GOODBYE: process.env.GOODBYE || "true",
+   
 };
