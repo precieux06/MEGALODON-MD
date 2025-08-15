@@ -25,38 +25,53 @@ module.exports = {
     AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*MEGALODON BOT VIEWED YOUR STATUS 🤖*",  // Status reply message
     READ_MESSAGE: process.env.READ_MESSAGE || "false",          // Mark messages as read automatically?
     AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "false",
+    // React to status updates?
     AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
+    // VIEW to status updates?
     // ===== REACTION & STICKER SETTINGS =====
-    AUTO_REACT: process.env.AUTO_REACT || "false",
-    CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
-    CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍",
+    AUTO_REACT: process.env.AUTO_REACT || "false",              // Auto-react to messages?
+    CUSTOM_REACT: process.env.CUSTOM_REACT || "false",          // Use custom emoji reactions?
+    CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍",  // Custom reaction emojis
     
     // ===== MEDIA & AUTOMATION =====
-    AUTO_RECORDING: process.env.AUTO_RECORDING || "false",
-    AUTO_TYPING: process.env.AUTO_TYPING || "false",
-    MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/roubzi.jpg",
+    AUTO_RECORDING: process.env.AUTO_RECORDING || "false",      // Auto-record voice notes?
+    AUTO_TYPING: process.env.AUTO_TYPING || "false",   // Show typing indicator?
+    MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/roubzi.jpg",  // Bot's "alive" image
 
     // ===== SECURITY & ANTI-FEATURES =====
     ANTI_BOT: process.env.ANTI_BOT || "true",
+    //antibot true or false
     ANTI_DELETE: process.env.ANTI_DELETE || "true",
     ANTI_CALL: process.env.ANTI_CALL || "true",
 
     REJECT_MSG: process.env.REJECT_MSG || "*📞 ᴄαℓℓ ɴσт αℓℓσωє∂ ιɴ тнιѕ ɴᴜмвєʀ уσυ ∂σɴт нανє ᴘєʀмιѕѕισɴ 📵*",
-    ANTI_BAD: process.env.ANTI_BAD || "false",
+    ANTI_BAD: process.env.ANTI_BAD || "false",                  // Block bad words?
 
     ANTI_LINK_KICK: process.env.ANTILINK_KICK || "false",
+// make anti link true,false for groups 
     ANTIVIEW_ONCE: process.env.ANTIVIEW_ONCE || "false",
+    
     ANTILINK_WARN: process.env.ANTILINK_WARN || "false",
-    ANTILINK: process.env.ANTILINK || "false",
-    ANTI_VV: process.env.ANTI_VV || "false",
-    DELETE_LINKS: process.env.DELETE_LINKS || "false",
-    ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "inbox",
+    
+     ANTILINK: process.env.ANTILINK || "false",
+    
+    ANTI_VV: process.env.ANTI_VV || "false",  
+    // Block view-once messages?
+    DELETE_LINKS: process.env.DELETE_LINKS || "false",  
+    // Auto-delete links?
+    ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "inbox", 
+    // Log deleted messages (or 'inbox' to resend)
 
     // ===== BOT BEHAVIOR & APPEARANCE =====
-    PUBLIC_MODE: process.env.PUBLIC_MODE || "true",
+   
+    PUBLIC_MODE: process.env.PUBLIC_MODE || "true",     
+    // Allow public commands?
     ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
+    // Show bot as always online?
     AUTO_BIO: process.env.AUTO_BIO || "false",
     
     WELCOME: process.env.WELCOME || "false",
+
     GOODBYE: process.env.GOODBYE || "true",
+   
 };
