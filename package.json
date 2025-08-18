@@ -9,7 +9,7 @@
     "restart": "pm2 restart MEGALODON-MD"
   },
   "dependencies": {
-    "baileys": "github:EdderBot02/bail",
+    "baileys": "npm:baileys-mod@latest",
     "axios": "^1.7.9",
     "@adiwajshing/keyed-db": "latest",
     "@dark-yasiya/scrap": "1.0.1",
