@@ -44,17 +44,6 @@
       "value": "false"  
     },    
    
-    "AUTO_REPLY": {
-      "description": "Make it true if you want automatic reply.",
-      "required": false,
-      "value": "false"
-    }, 
-
-    "AUTO_STICKER": {
-      "description": "Make it true if you want automatic sticker.",
-      "required": false,
-      "value": "false"
-    }, 
 
 
     "AUTO_STATUS_SEEN": {
@@ -183,14 +172,16 @@
       "value": "inbox"
     }, 
 
-    "ADMIN_EVENTS": {
-      "description": "make it true if want know who promote or demote a member .",
+  
+    "WELCOME": {
+      "description": "make it true if want welcome message in groups.",
       "required": false,
-      "value": "false"
+      "value": "true"
     },
 
-    "WELCOME": {
-      "description": "make it true if want goodbye and welcome message in groups.",
+
+    "GOODBYE": {
+      "description": "make it true if want goodbye message in groups.",
       "required": false,
       "value": "true"
     },
